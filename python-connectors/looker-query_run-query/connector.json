@@ -1,0 +1,56 @@
+/* This file is the descriptor for the Custom python dataset looker-api_look-results */
+{
+    /* Meta data for display purposes */
+    "meta" : {
+        "label" : "Looker Dataset - Run Look",
+        "description" : "Create a dataset from the results of a saved Looker Query / Look",
+        "icon" : "icon-puzzle-piece"
+    },
+
+    /* Can this connector read data ? */
+    "readable" : true,
+    /* Can this connector write data ? */
+    "writable" : false,
+
+
+    /* The field "params" holds a list of all the params
+       for wich the user will be prompted for values:
+
+       The available parameter types are:
+       STRING, INT, DOUBLE, BOOLEAN, PASSWORD, SELECT, MAP, TEXTAREA
+    */
+
+    "params": [
+        {
+            "name": "baseurl",
+            "label" : "Base URL",
+            "type": "STRING",
+            "description":"Enter the URL (including https) to your Looker instance",
+            "mandatory" : true
+        },
+        {
+            "name": "clientid",
+            "label" : "Client ID",
+            "type": "STRING",
+            "description":"Enter the Client ID used to authenticate to the API",
+            "mandatory" : true
+
+        },
+        {
+            "name": "clientsecret",
+            "label" : "Client Secret",
+            "type": "STRING",
+            "description":"Enter the Client Secret used to authenticate to the API",
+            "mandatory" : true
+
+        },
+        {
+            "name": "lookid",
+            "label" : "Look ID",
+            "type": "INT",
+            "description":"Enter the Look ID you want to retrieve",
+            "mandatory" : true
+
+        }
+    ]
+}
