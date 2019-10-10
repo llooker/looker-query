@@ -4,7 +4,7 @@
     "meta" : {
         "label" : "Looker Dataset - Run Look",
         "description" : "Create a dataset from the results of a saved Looker Query / Look",
-        "icon" : "icon-puzzle-piece"
+        "icon" : "icon-eye-open"
     },
 
     /* Can this connector read data ? */
@@ -22,33 +22,17 @@
 
     "params": [
         {
-            "name": "baseurl",
-            "label" : "Base URL",
-            "type": "STRING",
-            "description":"Enter the URL (including https) to your Looker instance",
-            "mandatory" : true
-        },
-        {
-            "name": "clientid",
-            "label" : "Client ID",
-            "type": "STRING",
-            "description":"Enter the Client ID used to authenticate to the API",
-            "mandatory" : true
-
-        },
-        {
-            "name": "clientsecret",
-            "label" : "Client Secret",
-            "type": "STRING",
-            "description":"Enter the Client Secret used to authenticate to the API",
-            "mandatory" : true
-
+            "name": "Looker API",
+            "label": "Pre-set credentials",
+            "description": "Enter here the Looker API connection to use",
+            "type": "PRESET",
+            "parameterSetId": "looker-api-credentials"
         },
         {
             "name": "lookid",
             "label" : "Look ID",
             "type": "INT",
-            "description":"Enter the Look ID you want to retrieve",
+            "description":"Look ID you want to retrieve",
             "mandatory" : true
 
         }
