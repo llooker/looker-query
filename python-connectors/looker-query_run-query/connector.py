@@ -53,7 +53,7 @@ class MyConnector(Connector):
     def generate_rows(self, dataset_schema=None, dataset_partitioning=None,
                             partition_id=None, records_limit = -1):
 
-        response = self.looker_client.run_look(self.look_id, "json", limit=records_limit)
+        response = self.looker_client.run_look(self.look_id, "json")
         data = json.loads(response)
         
         for row in data:
