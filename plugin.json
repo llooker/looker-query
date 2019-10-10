@@ -13,13 +13,13 @@
     // Meta data for display purposes
     "meta" : {
         // Name of this plugin that appears in the interface.
-        "label" : "Dataset Plugin Looker Query",
+        "label" : "Looker Query connector",
 
         "description" : "Get the results of a Looker query using the Looker API.",
         "author" : "Eric Carr",
 
         // The icon of a plugin must be one of the FontAwesome 3.1 icons
-        "icon" : "icon-puzzle-piece",
+        "icon" : "icon-eye-open",
 
         "licenseInfo" : "MIT License",
 
@@ -27,6 +27,6 @@
         "url" : "https://www.dataiku.com",
 
         // List of tags for filtering the list of plugins
-        "tags" : ["looker", "query", "nicedataset", "api", "dev"]
+        "tags" : ["looker", "connector", "api"]
     }
 }

@@ -14,6 +14,10 @@ You will need a valid saved query / Look ID to retrieve result sets.
 
 ## Changelog
 
+**Version 0.0.2 (2019-10-01)**
+
+* Adds code env to rely on looker-sdk module
+
 **Version 0.0.1 (2019-08-27)**
 
 * Initial release
@@ -23,4 +27,3 @@ You will need a valid saved query / Look ID to retrieve result sets.
 Read [Looker API documentation](https://docs.looker.com/reference/api-and-integration/api-reference/v3.1) for more information on the Looker API.
 
 Ask your question on [answers.dataiku.com](https://answers.dataiku.com). Or, [open an issue](https://github.com/dataiku/dataiku-contrib/issues).
-
