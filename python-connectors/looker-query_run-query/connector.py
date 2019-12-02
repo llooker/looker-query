@@ -22,7 +22,7 @@ class MyConnector(Connector):
         self.client_secret = self.plugin_config["Looker API"]["clientsecret"]
         self.look_id = int(self.config["lookid"])
         #self.limit = int(self.config["limit"])
-        
+
         print(self.plugin_config)
 
         if not (self.base_url and self.client_id and self.client_secret):
@@ -53,9 +53,9 @@ class MyConnector(Connector):
     def generate_rows(self, dataset_schema=None, dataset_partitioning=None,
                             partition_id=None, records_limit = -1):
 
-        response = self.looker_client.run_look(self.look_id, "json")
+        response = self.looker_client.run_look(self.look_id, "json", records_limit)
         data = json.loads(response)
-        
+
         for row in data:
             yield row
 
